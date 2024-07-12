@@ -41,7 +41,7 @@ try
     end
 
     % Define number of lines to read
-    numLines = 9; % Adjust this to the number of lines you want to read
+    numLines = 100; % Adjust this to the number of lines you want to read
 
     % Read data from Arduino and write to file
     disp('Data acquisition starting...');
@@ -51,6 +51,7 @@ try
         
         % Write data to file
         fprintf(fileID, '%s\n', dataLine);
+        disp("Writing line...(" + line + "/"+ numLines +")");
     end
     disp('Data acquisition complete.');
     

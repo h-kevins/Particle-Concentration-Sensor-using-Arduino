@@ -8,11 +8,9 @@
  * monitor.
  * 
  * @author Kevin Hernandez
- * @date [DATE]
+ * @date 7/12/24
  */
-/*
- * @author Kevin Hernandez
- */
+
 
 #include <SoftwareSerial.h>
 
@@ -83,7 +81,7 @@ void loop() {
     Serial.println(Vmeas, 3);  // send voltage data with 3 decimal places
   }
 
-  delay(500);  // Adjust delay as needed for your application
+  delay(350);  // Adjust delay as needed for your application
 }
 
 /**
