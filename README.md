@@ -29,8 +29,8 @@ Column 6: Particles > 10.0um / 0.1L air
 Column 7: Voltage data from the MEMS microphone
 
 # Common problems
-Make sure that the circuit is correctly made. 
-Clear the MATLAB workspace after each use.
-Check the connectionson the PMS5003.
+  - Make sure that the circuit is correctly made. 
+  - Clear the MATLAB workspace after each use.
+  - Check the connections on the PMS5003.
 
   
