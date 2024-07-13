@@ -41,7 +41,12 @@ try
     end
 
     % Define number of lines to read
-    numLines = 100; % Adjust this to the number of lines you want to read
+    numLines = 2500; % Adjust this to the number of lines you want to read
+
+    % Get current timestamp
+    timestamp = datestr(now, 'yyyy-mm-dd HH:MM:SS.FFF');
+    % Write the timestamp
+    fprintf(fileID, '%s\n',"# " + timestamp);
 
     % Read data from Arduino and write to file
     disp('Data acquisition starting...');
@@ -49,12 +54,20 @@ try
         % Read line from Arduino
         dataLine = char(readline(serObj));
         
+        
+        
         % Write data to file
         fprintf(fileID, '%s\n', dataLine);
         disp("Writing line...(" + line + "/"+ numLines +")");
     end
     disp('Data acquisition complete.');
     
+
+    % Get current timestamp
+    timestamp = datestr(now, 'yyyy-mm-dd HH:MM:SS.FFF');
+    % Write the timestamp
+    fprintf(fileID, '%s\n', "# " + timestamp);
+
     % Close the file
     fclose(fileID);
     disp('Data written to file.');
