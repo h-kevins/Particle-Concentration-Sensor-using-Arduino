@@ -84,18 +84,7 @@ void loop() {
   delay(350);  // Adjust delay as needed for your application
 }
 
-/**
- * @brief Reads data from a stream and parses it into a struct.
- * 
- * This function reads data from the specified stream and parses it into a struct
- * containing air quality data. It expects the data to be in a specific format,
- * with a start byte of either 0x42 or 0x4d, followed by 32 bytes of data.
- * The function checks for the validity of the start byte and calculates a checksum
- * to ensure data integrity. If the data is valid, it is stored in a struct.
- * 
- * @param s A pointer to the stream from which to read the data.
- * @return true if the data was successfully read and parsed, false otherwise.
- */
+
 /**
  * @brief Reads data from a stream and parses it into a structured format.
  * 
