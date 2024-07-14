@@ -1,20 +1,20 @@
-
- % This code reads data from an Arduino connected to the computer via a serial port and writes it to a file.
- % It waits for the Arduino to send a specific character indicating readiness before starting data acquisition.
- % The acquired data is then written to a file specified by the user.
- % 
- % @note Make sure to adjust the value of `numLines` variable to the number of lines you want to read from the Arduino.
- % 
- % @warning This code assumes that the Arduino is connected to the COM3 port and is configured to send data at a baud rate of 9600.
- % 
- % @throws An error is thrown if the file fails to open for writing.
- % 
- % @param None.
- % 
- % @return None.
- %
- % @author Kevin Hernandez
- %
+% Arduino Data Acquisition and Logging Script
+%
+% This script reads data from an Arduino connected to the computer via a
+% serial port and writes it to a file.
+%
+% Usage:
+%   Adjust the variables `port` and `baudrate` according to your Arduino
+%   configuration. Ensure the Arduino is ready to send data before running
+%   the script.
+%
+% Parameters:
+%   None.
+%
+% Returns:
+%   None.
+%
+% Author: Kevin Hernandez
 
 
 % Create serial port object using serialport
