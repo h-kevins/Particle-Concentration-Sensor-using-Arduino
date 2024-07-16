@@ -79,3 +79,4 @@ end
 % Close serial port
 delete(serObj);
 disp('Serial port closed.');
+disp('Serial port closed.');
